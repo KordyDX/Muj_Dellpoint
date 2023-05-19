@@ -8,6 +8,7 @@
         <title>Dellpoint</title>
     </head>
     <body>
+        <script src="./script.js"></script>
         <header>
             <div class="header_left">
                 <a class="logo" href="https://dellpoint.cz"><img
@@ -33,22 +34,30 @@
         </header>
         <nav>
             <div class="nav_left">
-                <div class="eshop_dropdown nav_left_element"><a href="">E-SHOP</a><img
-                        src="./images/arrow-down.svg"
-                        alt="down arrow svg image"></div>
+                <div class="eshop_dropdown nav_left_element"><button>E-SHOP<img
+                            src="./images/arrow-down.svg" alt="down arrow svg
+                            image"></button>
+                    <!-- <div class="eshop_dropdown_focus">
+                        <h3>Notebooky</h3>
+                        <img src="./images/notebook.jpg" alt="">
+                    </div> -->
+                </div>
                 <div class="sluzby_dropdown nav_left_element"><a href="">SLUŽBY</a><img
                         src="./images/arrow-down.svg" alt="down arrow svg
                         image"></div>
                 <a class="nav_left_element" href="">O SPOLEČNOSTI</a>
                 <a href="">KONTAKT</a>
                 <div class="reseni nav_left_element">
-                    <a href=""><img src="./images/puzzle.svg" alt="puzzle svg image"><p>ŘEŠENÍ NA MÍRU</p></a>
+                    <a href=""><img src="./images/puzzle.svg" alt="puzzle svg
+                            image"><p>ŘEŠENÍ NA MÍRU</p></a>
                 </div>
             </div>
             <div class="nav_right">
-                <a href=""><img src="./images/heart.svg" alt="heart svg image"></a>
+                <a class="heart" href=""><img src="./images/heart.svg"
+                        alt="heart svg image"></a>
                 <div class="search_stylish">
-                    <input class="search" type="text" placeholder="Hledej svůj počítač"><button type="submit"><img
+                    <input class="search" type="text" placeholder="Hledej svůj
+                        počítač"><button type="submit"><img
                             src="./images/search.svg" alt=""></button>
                 </div>
             </div>
@@ -56,96 +65,166 @@
         <section>
             <div class="main_section_grid">
                 <div class="main_section_grid_element1">
-                    <h2>
-                        NOTEBOOKY
-                    </h2>
-                    <ul>
-                        <a href=""><li><img src="./images/case.svg" alt="case
-                                    svg image">PRO PRÁCI</li></a>
-                        <a href=""><li><img src="./images/coffee.svg"
-                                    alt="coffee cup svg image">PRO DOMA</li></a>
-                        <a href=""><li><img src="./images/controller.svg"
-                                    alt="game controller svg image">PRO ZÁBAVU</li></a>
-                    </ul>
-                    <a href="">Nabídka notebooků<img
-                            src="./images/arrow-right.svg" alt="arrow pointing
-                            right svg image"></a>
-                    <img src="./images/laptops.png" alt="two laptops image">
+                    <img class="section_bg" src="./images/section_bg_1.png"
+                        alt="">
+                    <div class="section_container">
+                        <h2>
+                            NOTEBOOKY
+                        </h2>
+                        <ul>
+                            <a href=""><li class="li1"><img src="./images/case.svg"
+                                        alt="case
+                                        svg image">PRO PRÁCI</li></a>
+                            <a href=""><li class="li2"><img src="./images/coffee.svg"
+                                        alt="coffee cup svg image">PRO DOMA</li></a>
+                            <a href=""><li class="li3"><img src="./images/controller.svg"
+                                        alt="game controller svg image">PRO
+                                    ZÁBAVU</li></a>
+                        </ul>
+                        <div class="button_box_container">
+                            <a href="">Nabídka notebooků<img
+                                    src="./images/arrow-right.svg" alt="arrow
+                                    pointing
+                                    right svg image"></a></div>
+                        <img src="./images/laptops.png" alt="two laptops
+                            image">
+                    </div>
                 </div>
                 <div class="main_section_grid_element2">
-                    <img src="./images/computers.png" alt="two computers image">
-                    <h2>POČÍTAČE</h2>
-                    <ul>
-                        <a href=""><li><img src="./images/case.svg" alt="case
-                                    svg image">PRO PRÁCI</li></a>
-                        <a href=""><li><img src="./images/coffee.svg"
-                                    alt="coffee cup svg image">PRO DOMA</li></a>
-                        <a href=""><li><img src="./images/controller.svg"
-                                    alt="game controller svg image">PRO ZÁBAVU</li></a>
-                    </ul>
-                    <a href="">Nabídka počítačů<img
-                            src="./images/arrow-right.svg" alt="arrow pointing
-                            right svg image"></a>
+                    <img class="section_bg" src="./images/section_bg_2.png"
+                        alt="">
+                    <div class="section_content">
+                        <div class="section_content_left"><img
+                                src="./images/computers.png" alt="two computers
+                                image"></div>
+                        <div class="section_content_right">
+                            <h2>POČÍTAČE</h2>
+                            <ul>
+                                <a href=""><li class="li1"><img src="./images/case.svg"
+                                            alt="case
+                                            svg image">PRO PRÁCI</li></a>
+                                <a href=""><li class="li2"><img src="./images/coffee.svg"
+                                            alt="coffee cup svg image">PRO DOMA</li></a>
+                                <a href=""><li class="li3"><img
+                                            src="./images/controller.svg"
+                                            alt="game controller svg image">PRO
+                                        ZÁBAVU</li></a>
+                            </ul>
+                            <div class="button_box_container">
+                                <a href="">Nabídka počítačů<img
+                                        src="./images/arrow-right.svg"
+                                        alt="arrow
+                                        pointing
+                                        right svg image"></a>
+                            </div>
+                        </div>
+                    </div>
                 </div>
                 <div class="main_section_grid_element3">
-                    <h2>SERVERY A ÚLOŽIŠTĚ</h2>
-                    <p>Servery, úložiště, switche a další produkty pro vaše
-                        pracovní zázemí.</p>
-                    <img src="./images/servers.png" alt="two servers image">
-                    <a href="">Nabídka<img src="./images/arrow-right.svg"
-                            alt="arrow pointing right svg"></a>
+                    <img class="section_bg" src="./images/section_bg_3.png"
+                        alt="">
+                    <div class="section_content">
+                        <h2>SERVERY A ÚLOŽIŠTĚ</h2>
+                        <p>Servery, úložiště, switche a další produkty pro vaše
+                            pracovní zázemí.</p>
+                        <img src="./images/servers.png" alt="two servers image">
+                        <div class="button_box_container">
+                            <a href="">Nabídka<img
+                                    src="./images/arrow-right.svg"
+                                    alt="arrow pointing right svg"></a>
+                        </div>
+                    </div>
                 </div>
                 <div class="main_section_grid_element4">
-                    <h2>ŘEŠENÍ NA MÍRU</h2>
-                    <p>KONZULTACE, ZJIŠTĚNÍ UŽITKOVÝCH VLASTNOSTÍ, NÁVRHY A
-                        PLNĚNÍ POTŘEB ZÁKAZNÍKA</p>
-                    <a href="">Chci vědět víc<img src="./images/arrow-right.svg"
-                            alt="arrow pointing right svg"></a>
-                    <img src="./images/computer.png" alt="computer image">
+                    <img class="section_bg" src="./images/section_bg_4.png"
+                        alt="">
+                    <div class="section_content">
+                        <div class="section_content_left">
+                            <h2>ŘEŠENÍ NA MÍRU</h2>
+                            <p>KONZULTACE, ZJIŠTĚNÍ UŽITKOVÝCH VLASTNOSTÍ,
+                                NÁVRHY A
+                                PLNĚNÍ POTŘEB ZÁKAZNÍKA</p>
+                            <div class="button_box_container
+                                button_box_container1">
+                                <a href="">Chci vědět víc<img
+                                        src="./images/arrow-right_alt.svg"
+                                        alt="arrow pointing right svg"></a>
+                            </div>
+                        </div>
+                        <div class="section_content_right"><img
+                                src="./images/computer.png" alt="computer
+                                image"></div>
+                    </div>
                 </div>
                 <div class="main_section_grid_element5">
-                    <h2>SERVIS A PRODLOUŽENÍ ZÁRUKY</h2>
-                    <p>PŘÍMO OD DELLU</p>
-                    <a href="">Chci informace<img src="./images/arrow-right.svg"
-                            alt="arrow pointing right svg"></a>
-                    <img src="./images/laptops2.png" alt="another two laptops
-                        image">
+                    <img class="section_bg" src="./images/section_bg_5.png"
+                        alt="">
+                    <div class="section_content">
+                        <div class="section_content_left">
+                            <h2>SERVIS A PRODLOUŽENÍ ZÁRUKY</h2>
+                            <p>PŘÍMO OD DELLU</p>
+                            <div class="button_box_container
+                                button_box_container2">
+                                <a href="">Chci informace<img
+                                        src="./images/arrow-right_alt.svg"
+                                        alt="arrow pointing right svg"></a>
+                            </div>
+                        </div>
+
+                        <div class="section_content_right">
+                            <img src="./images/laptops2.png" alt="another two
+                                laptops
+                                image">
+                        </div>
+                    </div>
                 </div>
             </div>
-            <div class="studie">
-                <h2>PŘÍPADOVÉ STUDIE</h2>
-                <img src="./images/studie.png" alt="man on a computer
-                    image">
-                <a href="">Detail<img src="./images/arrow-right.svg"
-                        alt="arrow
-                        pointing right svg image"></a>
-            </div>
-            <div class="aktuality">
-                <h2>AKCE A AKTUALITY</h2>
-                <div class="aktualita">
-                    <img src="./images/aktualita.png"
-                        alt="man on a computer image">
-                    <h3>Dodáno 62 ks
-                        notebooků Dell Inspiron na Základní školu Míru v
-                        Liberci.</h3>
-                    <p>Vyhráli jsme výběrové řízení a na ZŠ
-                        Míru jsme tak mohli dodat kvalitní notebooky Dell
-                        pro zdejší žáky a učitele. Noteboky mají
-                        prodlouženou záruku na 4 roky se servisem na místě u
-                        zákazníka.</p>
-                    <img src="./images/arrow-right.svg"
-                        alt="arrow pointing right svg image"></div>
-                <div class="aktualita">
-                    <img src="./images/aktualita2.png" alt="woman sitting
-                        with a laptop image">
-                    <h3>Dodáno 62 ks notebooků Dell Inspiron na Základní
-                        školu Míru v Liberci.</h3>
-                    <p>Vyhráli jsme výběrové řízení a na ZŠ Míru jsme tak
-                        mohli dodat kvalitní notebooky Dell pro zdejší žáky
-                        a učitele. Noteboky mají prodlouženou záruku na 4
-                        roky se servisem na místě u zákazníka.</p>
-                    <img src="./images/arrow-right.svg"
-                        alt="arrow pointing right svg image">
+            <div class="news">
+                <div class="studies">
+                    <h2>PŘÍPADOVÉ STUDIE</h2>
+                    <img src="./images/studie.png" alt="man on a computer
+                        image">
+                    <div class="button_box_container"><a class=""
+                            href="">Detail<img src="./images/arrow-right.svg"
+                                alt="arrow pointing right svg image"></a></div>
+                </div>
+
+                <div class="actualities">
+                    <h2>AKCE A AKTUALITY</h2>
+                    <div class="actualities_container">
+                        <div class="actuality">
+                            <img src="./images/aktualita.png"
+                                alt="man on a computer image">
+                            <h3>Dodáno 62 ks
+                                notebooků Dell Inspiron na Základní školu Míru v
+                                Liberci.</h3>
+                            <p>Vyhráli jsme výběrové řízení a na ZŠ
+                                Míru jsme tak mohli dodat kvalitní notebooky
+                                Dell
+                                pro zdejší žáky a učitele. Noteboky mají
+                                prodlouženou záruku na 4 roky se servisem na
+                                místě u
+                                zákazníka.</p>
+                            <img src="./images/arrow-right.svg"
+                                alt="arrow pointing right svg image">
+                        </div>
+                        <div class="actuality">
+                            <img src="./images/aktualita2.png" alt="woman
+                                sitting
+                                with a laptop image">
+                            <h3>Dodáno 62 ks notebooků Dell Inspiron na Základní
+                                školu Míru v Liberci.</h3>
+                            <p>Vyhráli jsme výběrové řízení a na ZŠ Míru jsme
+                                tak
+                                mohli dodat kvalitní notebooky Dell pro zdejší
+                                žáky
+                                a učitele. Noteboky mají prodlouženou záruku na
+                                4
+                                roky se servisem na místě u zákazníka.</p>
+                            <img src="./images/arrow-right.svg"
+                                alt="arrow pointing right svg image">
+                        </div>
+                    </div>
                 </div>
             </div>
             <div class="why_choose">
@@ -209,54 +288,73 @@
                 </div>
             </div>
             <div class="spoluprace">
-                <h3>Spolupracujeme</h3>
-                <img src="./images/magnalogo.png" alt="magna company logo
-                    image">
-                <img src="./images/magnalogo.png" alt="magna company logo
-                    image">
-                <img src="./images/magnalogo.png" alt="magna company logo
-                    image">
-                <img src="./images/magnalogo.png" alt="magna company logo
-                    image">
-                <img src="./images/bronzelogo.png" alt="bronze partner company
-                    logo image">
-                <img src="./images/microsoftlogo.png" alt="microsoft company
-                    logo image">
-                <img src="./images/dell_techlogo.png" alt="dell technologies
-                    company logo image">
-                <img src="./images/heureka.png" alt="heureka verified company
-                    image">
+                <div class="spoluprace_left">
+                    <h3>Spolupracujeme</h3>
+                    <div class="spoluprace_container">
+                        <img src="./images/magnalogo.png" alt="magna company
+                            logo
+                            image">
+                        <img src="./images/magnalogo.png" alt="magna company
+                            logo
+                            image">
+                        <img src="./images/magnalogo.png" alt="magna company
+                            logo
+                            image">
+                        <img src="./images/magnalogo.png" alt="magna company
+                            logo
+                            image">
+                    </div>
+                </div>
+                <div class="spoluprace_right">
+                    <h3>Jsme jedničkou v prodeji DELL produktů</h3>
+                    <div class="spoluprace_container">
+                        <img src="./images/bronzelogo.png" alt="bronze partner
+                            company
+                            logo image">
+                        <img src="./images/microsoftlogo.png" alt="microsoft
+                            company
+                            logo image">
+                        <img src="./images/dell_techlogo.png" alt="dell
+                            technologies
+                            company logo image">
+                        <img src="./images/heureka.png" alt="heureka verified
+                            company
+                            image">
+                    </div>
+                </div>
             </div>
         </section>
         <footer>
-            <div class="opening">
-                <h3>Otevírací doba</h3>
-                <p>Pondělí - Pátek</p>
-                <p>9:00 - 12:00 14:00 - 17:00</p>
-                <p>Sobota, Neděle, Svátky</p>
-                <p>Zavřeno</p>
-            </div>
-            <div class="services">
-                <h3>Naše služby</h3>
-                <a href="">Pozáruční opravy DELL, náhradní díly</a>
-                <a href="">Počítačové služby</a>
-                <a href="">Prodloužení originální záruky Dell</a>
-                <a href="">Náhradní plnění</a>
-                <a href="">Důležité odkazy a tipy</a>
-            </div>
-            <div class="shop">
-                <h3>Obchod</h3>
-                <a href="">Jak nakupovat, ceník služeb</a>
-                <a href="">Obchodní podmínky</a>
-                <a href="">Reklamační řád</a>
-                <a href="">Ochrana osobních údajů</a>
-                <a href="">Kontakty</a>
-            </div>
-            <div class="contact_us">
-                <h3>Kontaktujte nás</h3>
-                <a href="tel: +420737950915">+420 737 950 915</a>
-                <a href="mailto: info@dellpoint.cz">info@dellpoint.cz</a>
-                <a href=""><img src="./images/facebook.svg" alt=""></a>
+            <div class="footer_links_container">
+                <div class="opening footer_element">
+                    <h3>Otevírací doba</h3>
+                    <p>Pondělí - Pátek<br>
+                        9:00 - 12:00 14:00 - 17:00</p>
+                    <p>Sobota, Neděle, Svátky<br>
+                        Zavřeno</p>
+                </div>
+                <div class="services footer_element">
+                    <h3>Naše služby</h3>
+                    <a href="">Pozáruční opravy DELL, náhradní díly</a>
+                    <a href="">Počítačové služby</a>
+                    <a href="">Prodloužení originální záruky Dell</a>
+                    <a href="">Náhradní plnění</a>
+                    <a href="">Důležité odkazy a tipy</a>
+                </div>
+                <div class="shop footer_element">
+                    <h3>Obchod</h3>
+                    <a href="">Jak nakupovat, ceník služeb</a>
+                    <a href="">Obchodní podmínky</a>
+                    <a href="">Reklamační řád</a>
+                    <a href="">Ochrana osobních údajů</a>
+                    <a href="">Kontakty</a>
+                </div>
+                <div class="contact_us footer_element">
+                    <h3>Kontaktujte nás</h3>
+                    <a href="tel: +420737950915">+420 737 950 915</a>
+                    <a href="mailto: info@dellpoint.cz">info@dellpoint.cz</a>
+                    <a href=""><img src="./images/facebook.svg" alt=""></a>
+                </div>
             </div>
             <div class="copyright">Dell is a trademark of Dell Inc. | Copyright
                 ©
