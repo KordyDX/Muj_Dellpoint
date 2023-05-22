@@ -88,12 +88,11 @@ header .contact .contact_text {
   display: flex;
   flex-flow: column;
 }
+header .contact .contact_text .number {
+  color: #DE2F09;
+}
 header .contact .contact_text a {
   color: black;
-}
-header .contact .contact_text .number {
-  font-size: 30px;
-  color: #DE2F09;
 }
 
 nav {
@@ -110,28 +109,10 @@ nav .nav_left {
   align-items: center;
   justify-content: space-evenly;
   width: 65%;
-  /*.eshop_dropdown:hover {
-      .eshop_dropdown_focus{
-      display: block;
-      }
-  }*/
 }
 nav .nav_left .eshop_dropdown {
   display: block;
   position: relative;
-  /*.eshop_dropdown_focus {
-      margin-top: 25px;
-      display: none;
-      position: absolute;
-      left: 0;
-      background-color: white;
-      border: 2px black;
-      border-top: 0;
-      border-style: solid;
-      h3 {
-          color: black;
-      }
-  }*/
 }
 nav .nav_left .eshop_dropdown button {
   color: white;
@@ -201,15 +182,11 @@ nav .nav_right .search_stylish button {
   background-color: #292929;
 }
 
+section {
+  overflow: hidden;
+}
 section a {
   color: black;
-}
-section .main_section_grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(2, 1fr);
-  grid-column-gap: 0px;
-  grid-row-gap: 0px;
 }
 section .main_section_grid h2 {
   color: white;
@@ -220,7 +197,6 @@ section .main_section_grid h2 {
 }
 section .main_section_grid ul {
   display: flex;
-  align-items: center;
   margin: 0;
   padding: 0;
 }
@@ -256,11 +232,6 @@ section .main_section_grid .main_section_grid_element {
   display: flex;
   width: 100%;
   align-items: center;
-  justify-content: space-around;
-}
-section .main_section_grid .main_section_grid_element img {
-  -o-object-fit: none;
-     object-fit: none;
 }
 section .main_section_grid .section_content {
   display: flex;
@@ -286,45 +257,27 @@ section .main_section_grid .main_section_grid_element1 {
 }
 section .main_section_grid .main_section_grid_element1 .section_content {
   display: flex;
-  white-space: nowrap;
   justify-content: space-around;
-}
-section .main_section_grid .main_section_grid_element1 .section_content .section_content_left {
-  margin-right: auto;
-}
-section .main_section_grid .main_section_grid_element1 .section_content .section_content_right {
-  margin-left: auto;
 }
 section .main_section_grid .main_section_grid_element2 {
   background-image: url(../images/section_bg_2.png);
-}
-section .main_section_grid .main_section_grid_element2 .section_content {
-  display: flex;
 }
 section .main_section_grid .main_section_grid_element3 {
   background-image: url(../images/section_bg_3.png);
 }
 section .main_section_grid .main_section_grid_element3 .section_content {
-  position: relative;
-  z-index: 2;
   display: flex;
   flex-flow: column;
   height: 100%;
-  justify-content: space-around;
 }
 section .main_section_grid .main_section_grid_element4 {
   color: #DE2F09;
-  display: flex;
   background-image: url(../images/section_bg_4.png);
 }
 section .main_section_grid .main_section_grid_element4 h2 {
   color: #DE2F09;
 }
 section .main_section_grid .main_section_grid_element4 .section_content {
-  position: relative;
-  z-index: 2;
-  display: flex;
-  flex-flow: row;
   align-items: center;
 }
 section .main_section_grid .main_section_grid_element4 .section_content p {
@@ -342,45 +295,39 @@ section .main_section_grid .main_section_grid_element5 h2 {
   color: #3D81C0;
 }
 section .main_section_grid .main_section_grid_element5 .section_content {
-  position: relative;
-  z-index: 2;
-  display: flex;
-  flex-flow: row;
   align-items: center;
 }
 section .main_section_grid .main_section_grid_element5 .button_box_container2 a {
   background-color: #3D81C0;
   color: white;
 }
-
-.news {
+section .news {
   display: flex;
   flex-flow: row;
   justify-content: center;
   gap: 20px;
 }
-.news h2 {
+section .news h2 {
   font-size: 40px;
 }
-.news .studies {
+section .news .studies {
   display: flex;
   flex-flow: column;
 }
-.news .actualities {
+section .news .actualities {
   display: flex;
   flex-flow: column;
   padding-right: 20px;
 }
-.news .actualities .actualities_container {
+section .news .actualities .actualities_container {
   display: flex;
   flex-flow: row;
   gap: 20px;
 }
-.news .actualities .actualities_container .actuality {
+section .news .actualities .actualities_container .actuality {
   max-width: 393px;
 }
-
-.spoluprace {
+section .spoluprace {
   display: flex;
   flex-flow: row;
   justify-content: center;
@@ -389,42 +336,38 @@ section .main_section_grid .main_section_grid_element5 .button_box_container2 a 
   padding: 40px 0 40px 0;
   margin: 0 150px 0 150px;
 }
-.spoluprace img {
+section .spoluprace img {
   -o-object-fit: contain;
      object-fit: contain;
 }
-.spoluprace .spoluprace_left {
+section .spoluprace .spoluprace_left {
   display: flex;
   flex-flow: column;
 }
-.spoluprace .spoluprace_right {
+section .spoluprace .spoluprace_right {
   display: flex;
   flex-flow: column;
 }
-.spoluprace .spoluprace_container {
+section .spoluprace .spoluprace_container {
   height: 160px;
   display: flex;
   flex-flow: row;
   gap: 20px;
   align-items: center;
 }
-
-.why_choose {
+section .why_choose {
   z-index: 1;
   position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
   color: white;
-  /*background-image: url(../images/dell-bg.png);
-      background-repeat: no-repeat;
-      background-size: cover;*/
 }
-.why_choose h2 {
+section .why_choose h2 {
   font-size: 40px;
   margin: 150px 0 50px 0;
 }
-.why_choose .bg {
+section .why_choose .bg {
   -o-object-fit: cover;
      object-fit: cover;
   position: absolute;
@@ -432,7 +375,7 @@ section .main_section_grid .main_section_grid_element5 .button_box_container2 a 
   height: 100%;
   filter: grayscale(100%);
 }
-.why_choose .why_choose_container {
+section .why_choose .why_choose_container {
   width: 100%;
   height: 100%;
   position: relative;
@@ -440,29 +383,29 @@ section .main_section_grid .main_section_grid_element5 .button_box_container2 a 
   display: flex;
   flex-flow: column;
 }
-.why_choose .container {
+section .why_choose .container {
   margin: 0 150px 0 150px;
 }
-.why_choose .why_choose_items {
+section .why_choose .why_choose_items {
   display: flex;
   margin-bottom: 150px;
   justify-content: space-between;
 }
-.why_choose .why_choose_item {
+section .why_choose .why_choose_item {
   max-width: 155px;
   display: flex;
   flex-flow: column;
 }
-.why_choose .why_choose_item p {
+section .why_choose .why_choose_item p {
   font-size: 18px;
   font-weight: 700;
 }
-.why_choose .why_choose_image_container {
+section .why_choose .why_choose_image_container {
   display: flex;
   align-items: center;
   height: 79px;
 }
-.why_choose .background_filter {
+section .why_choose .background_filter {
   position: absolute;
   background-color: #000000;
   width: 100%;
@@ -494,4 +437,65 @@ footer .footer_element a {
   margin: 16px 0 16px 0;
   display: flex;
   color: white;
+}
+
+@media only screen and (min-width: 1200px) and (max-width: 3680px) {
+  .main_section_grid {
+    display: grid;
+    grid-template-columns: 45% 20% 35%;
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+  }
+  .imager img {
+    width: 100%;
+    height: 100%;
+    -o-object-fit: contain;
+       object-fit: contain;
+  }
+  .number {
+    font-size: 30px;
+    color: #DE2F09;
+  }
+}
+@media only screen and (max-width: 480px) {
+  header {
+    margin: 0;
+    padding: 0;
+    flex-flow: column;
+  }
+  header .header_left {
+    gap: 5px;
+    padding: 5px;
+    justify-content: center;
+  }
+  header .header_left .logo {
+    content: url(../images/dell.svg);
+  }
+  header .header_right {
+    padding: 5px;
+    margin: 0;
+    justify-content: space-around;
+  }
+  header .header_right .contact img {
+    height: 38px;
+  }
+  header .header_right .contact a {
+    font-size: medium;
+  }
+  nav .nav_right {
+    padding: 0;
+  }
+  section .main_section_grid {
+    display: flex;
+    grid-template-columns: 0;
+    grid-template-rows: 0;
+    flex-flow: column;
+  }
+  section .main_section_grid ul li {
+    white-space: normal;
+  }
+  section .section_content .section_content_image {
+    display: none;
+  }
 }
