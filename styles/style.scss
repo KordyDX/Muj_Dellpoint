@@ -117,6 +117,12 @@ nav {
     align-items: center;
     width: 100%;
 
+    .nav_container {
+        width: 100%;
+        display: flex;
+        flex-flow: row;
+    }
+
     .nav_left {
         display: flex;
         align-items: center;
@@ -125,7 +131,6 @@ nav {
 
         .eshop_dropdown {
             display: block;
-            position: relative;
 
             button {
                 color: white;
@@ -294,7 +299,7 @@ section {
         }
 
         .main_section_grid_element1 {
-            background-image: url(../images/section_bg_1.png);
+            background-image: url(../images/section_bg_1.webp);
 
             .section_content {
                 display: flex;
@@ -303,11 +308,11 @@ section {
         }
 
         .main_section_grid_element2 {
-            background-image: url(../images/section_bg_2.png);
+            background-image: url(../images/section_bg_2.webp);
         }
 
         .main_section_grid_element3 {
-            background-image: url(../images/section_bg_3.png);
+            background-image: url(../images/section_bg_3.webp);
 
             .section_content {
                 display: flex;
@@ -318,7 +323,7 @@ section {
 
         .main_section_grid_element4 {
             color: #DE2F09;
-            background-image: url(../images/section_bg_4.png);
+            background-image: url(../images/section_bg_4.webp);
 
             h2 {
                 color: #DE2F09;
@@ -343,7 +348,7 @@ section {
         .main_section_grid_element5 {
             color: #3D81C0;
 
-            background-image: url(../images/section_bg_5.png);
+            background-image: url(../images/section_bg_5.webp);
 
             h2 {
                 color: #3D81C0;
@@ -397,6 +402,7 @@ section {
 
     .spoluprace {
         display: flex;
+        flex-wrap: wrap;
         flex-flow: row;
         justify-content: center;
         align-items: center;
@@ -411,19 +417,25 @@ section {
         .spoluprace_left {
             display: flex;
             flex-flow: column;
+            flex-wrap: wrap;
+
         }
 
         .spoluprace_right {
             display: flex;
             flex-flow: column;
+            flex-wrap: wrap;
+
         }
 
         .spoluprace_container {
-            height: 160px;
+            height: fit-content;
             display: flex;
             flex-flow: row;
             gap: 20px;
             align-items: center;
+            flex-wrap: wrap;
+
         }
     }
 
@@ -438,7 +450,6 @@ section {
         display: flex;
         justify-content: center;
         align-items: center;
-
         .bg {
             object-fit: cover;
             position: absolute;
@@ -464,6 +475,7 @@ section {
             display: flex;
             margin-bottom: 150px;
             justify-content: space-between;
+            flex-wrap: wrap;
         }
 
         .why_choose_item {
@@ -587,8 +599,10 @@ footer {
         position: relative;
         justify-content: center;
         flex-flow: column;
+
         .nav_button_container {
             padding: 10px;
+
             .nav_button {
                 transform: rotate(-90deg);
                 transition: all 0.3s cubic-bezier(0.45, 0, 0.55, 1);
@@ -618,20 +632,24 @@ footer {
             flex-flow: column;
             justify-content: center;
             align-items: center;
+
             .nav_left {
                 flex-flow: column;
                 gap: 10px;
+
                 .reseni {
                     p {
                         width: max-content;
                     }
                 }
             }
+
             .nav_right {
                 flex-flow: column;
                 gap: 10px;
                 padding: 5px 0 15px 0;
                 margin: 0;
+
                 a.heart {
                     padding: 0;
                 }

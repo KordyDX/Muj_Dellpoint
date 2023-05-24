@@ -107,6 +107,11 @@ nav a {
 nav .nav_button {
   display: none;
 }
+nav .nav_container {
+  width: 100%;
+  display: flex;
+  flex-flow: row;
+}
 nav .nav_left {
   display: flex;
   align-items: center;
@@ -115,7 +120,6 @@ nav .nav_left {
 }
 nav .nav_left .eshop_dropdown {
   display: block;
-  position: relative;
 }
 nav .nav_left .eshop_dropdown button {
   color: white;
@@ -256,17 +260,17 @@ section .main_section_grid .main_section_grid_element5 {
   grid-area: 2/3/3/4;
 }
 section .main_section_grid .main_section_grid_element1 {
-  background-image: url(../images/section_bg_1.png);
+  background-image: url(../images/section_bg_1.webp);
 }
 section .main_section_grid .main_section_grid_element1 .section_content {
   display: flex;
   justify-content: space-around;
 }
 section .main_section_grid .main_section_grid_element2 {
-  background-image: url(../images/section_bg_2.png);
+  background-image: url(../images/section_bg_2.webp);
 }
 section .main_section_grid .main_section_grid_element3 {
-  background-image: url(../images/section_bg_3.png);
+  background-image: url(../images/section_bg_3.webp);
 }
 section .main_section_grid .main_section_grid_element3 .section_content {
   display: flex;
@@ -275,7 +279,7 @@ section .main_section_grid .main_section_grid_element3 .section_content {
 }
 section .main_section_grid .main_section_grid_element4 {
   color: #DE2F09;
-  background-image: url(../images/section_bg_4.png);
+  background-image: url(../images/section_bg_4.webp);
 }
 section .main_section_grid .main_section_grid_element4 h2 {
   color: #DE2F09;
@@ -292,7 +296,7 @@ section .main_section_grid .main_section_grid_element4 .button_box_container1 a 
 }
 section .main_section_grid .main_section_grid_element5 {
   color: #3D81C0;
-  background-image: url(../images/section_bg_5.png);
+  background-image: url(../images/section_bg_5.webp);
 }
 section .main_section_grid .main_section_grid_element5 h2 {
   color: #3D81C0;
@@ -332,6 +336,7 @@ section .news .actualities .actualities_container .actuality {
 }
 section .spoluprace {
   display: flex;
+  flex-wrap: wrap;
   flex-flow: row;
   justify-content: center;
   align-items: center;
@@ -346,17 +351,21 @@ section .spoluprace img {
 section .spoluprace .spoluprace_left {
   display: flex;
   flex-flow: column;
+  flex-wrap: wrap;
 }
 section .spoluprace .spoluprace_right {
   display: flex;
   flex-flow: column;
+  flex-wrap: wrap;
 }
 section .spoluprace .spoluprace_container {
-  height: 160px;
+  height: -moz-fit-content;
+  height: fit-content;
   display: flex;
   flex-flow: row;
   gap: 20px;
   align-items: center;
+  flex-wrap: wrap;
 }
 section .why_choose {
   z-index: 1;
@@ -393,6 +402,7 @@ section .why_choose .why_choose_items {
   display: flex;
   margin-bottom: 150px;
   justify-content: space-between;
+  flex-wrap: wrap;
 }
 section .why_choose .why_choose_item {
   max-width: 155px;
