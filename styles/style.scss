@@ -584,11 +584,13 @@ footer {
     }
 
     nav {
+        position: relative;
         justify-content: center;
         flex-flow: column;
         .nav_button_container {
             padding: 10px;
             .nav_button {
+                transform: rotate(-90deg);
                 transition: all 0.3s cubic-bezier(0.45, 0, 0.55, 1);
                 display: block;
                 border: 0;
@@ -602,26 +604,34 @@ footer {
 
         .nav_button.focused {
             transition: all 0.3s cubic-bezier(0.45, 0, 0.55, 1);
-            transform: rotate(90deg);
+            transform: rotate(0deg);
         }
 
         .nav_container {
             transition: all 0.3s cubic-bezier(0.45, 0, 0.55, 1);
+            display: flex;
+            position: absolute;
+            background-color: #0D0D0D;
+            width: 100%;
+            top: 100%;
+            transform: translateX(-100%);
             flex-flow: column;
             justify-content: center;
             align-items: center;
             .nav_left {
+                flex-flow: column;
                 gap: 10px;
                 .reseni {
                     p {
-                        -webkit-line-clamp: 1;
                         width: max-content;
                     }
                 }
             }
             .nav_right {
+                flex-flow: column;
                 gap: 10px;
                 padding: 5px 0 15px 0;
+                margin: 0;
                 a.heart {
                     padding: 0;
                 }
@@ -630,22 +640,7 @@ footer {
 
         .nav_container.focused {
             transition: all 0.3s cubic-bezier(0.45, 0, 0.55, 1);
-            display: flex;
-        }
-
-        .nav_container {
-            display: none;
-            flex-flow: column;
-
-            .nav_left {
-                display: flex;
-                flex-flow: column;
-            }
-
-            .nav_right {
-                display: flex;
-                flex-flow: column;
-            }
+            transform: translateX(0);
         }
     }
 
