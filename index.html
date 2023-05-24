@@ -32,27 +32,30 @@
             </div>
         </header>
         <nav>
-            <div class="nav_left">
-                <div class="eshop_dropdown nav_left_element"><button>E-SHOP<img
+            <div class="nav_button_container"><button class="nav_button"><img src="./images/menu.svg" alt=""></button></div>
+            <div class="nav_container">
+                <div class="nav_left">
+                    <div class="eshop_dropdown nav_left_element"><button>E-SHOP<img
+                                src="./images/arrow-down.svg" alt="down arrow svg
+                                image"></button>
+                    </div>
+                    <div class="sluzby nav_left_element"><a href="">SLUŽBY</a><img
                             src="./images/arrow-down.svg" alt="down arrow svg
-                            image"></button>
+                            image"></div>
+                    <a class="nav_left_element" href="">O SPOLEČNOSTI</a>
+                    <a href="">KONTAKT</a>
+                    <div class="reseni nav_left_element">
+                        <a href=""><img src="./images/puzzle.svg" alt="puzzle svg
+                                image"><p>ŘEŠENÍ NA MÍRU</p></a>
+                    </div>
                 </div>
-                <div class="sluzby_dropdown nav_left_element"><a href="">SLUŽBY</a><img
-                        src="./images/arrow-down.svg" alt="down arrow svg
-                        image"></div>
-                <a class="nav_left_element" href="">O SPOLEČNOSTI</a>
-                <a href="">KONTAKT</a>
-                <div class="reseni nav_left_element">
-                    <a href=""><img src="./images/puzzle.svg" alt="puzzle svg
-                            image"><p>ŘEŠENÍ NA MÍRU</p></a>
-                </div>
-            </div>
-            <div class="nav_right">
-                <a class="heart" href=""><img src="./images/heart.svg"
-                        alt="heart svg image"></a>
-                <div class="search_stylish">
-                    <input class="search" type="text" placeholder="Hledej svůj počítač"><button type="submit"><img
-                            src="./images/search.svg" alt=""></button>
+                <div class="nav_right">
+                    <a class="heart" href=""><img src="./images/heart.svg"
+                            alt="heart svg image"></a>
+                    <div class="search_stylish">
+                        <input class="search" type="text" placeholder="Hledej svůj počítač"><button type="submit"><img
+                                src="./images/search.svg" alt=""></button>
+                    </div>
                 </div>
             </div>
         </nav>
@@ -197,8 +200,10 @@
                                 prodlouženou záruku na 4 roky se servisem na
                                 místě u
                                 zákazníka.</p>
-                            <img src="./images/arrow-right.svg"
-                                alt="arrow pointing right svg image">
+                            <a href="">
+                                <img src="./images/arrow-right.svg"
+                                    alt="arrow pointing right svg image">
+                            </a>
                         </div>
                         <div class="actuality">
                             <img src="./images/aktualita2.png" alt="woman
@@ -213,8 +218,10 @@
                                 a učitele. Noteboky mají prodlouženou záruku na
                                 4
                                 roky se servisem na místě u zákazníka.</p>
-                            <img src="./images/arrow-right.svg"
-                                alt="arrow pointing right svg image">
+                            <a href="">
+                                <img src="./images/arrow-right.svg"
+                                    alt="arrow pointing right svg image">
+                            </a>
                         </div>
                     </div>
                 </div>
@@ -280,38 +287,54 @@
                 </div>
             </div>
             <div class="spoluprace">
-                <div class="spoluprace_left">
+                <div class="spoluprace_left spoluprace_parent">
                     <h3>Spolupracujeme</h3>
                     <div class="spoluprace_container">
-                        <img src="./images/magnalogo.png" alt="magna company
-                            logo
-                            image">
-                        <img src="./images/magnalogo.png" alt="magna company
-                            logo
-                            image">
-                        <img src="./images/magnalogo.png" alt="magna company
-                            logo
-                            image">
-                        <img src="./images/magnalogo.png" alt="magna company
-                            logo
-                            image">
+                        <div class="spoluprace_image">
+                            <img src="./images/magnalogo.png" alt="magna company
+                                logo
+                                image">
+                        </div>
+                        <div class="spoluprace_image">
+                            <img src="./images/magnalogo.png" alt="magna company
+                                logo
+                                image">
+                        </div>
+                        <div class="spoluprace_image">
+                            <img src="./images/magnalogo.png" alt="magna company
+                                logo
+                                image">
+                        </div>
+                        <div class="spoluprace_image">
+                            <img src="./images/magnalogo.png" alt="magna company
+                                logo
+                                image">
+                        </div>
                     </div>
                 </div>
-                <div class="spoluprace_right">
+                <div class="spoluprace_right spoluprace_parent">
                     <h3>Jsme jedničkou v prodeji DELL produktů</h3>
                     <div class="spoluprace_container">
-                        <img src="./images/bronzelogo.png" alt="bronze partner
-                            company
-                            logo image">
-                        <img src="./images/microsoftlogo.png" alt="microsoft
-                            company
-                            logo image">
-                        <img src="./images/dell_techlogo.png" alt="dell
-                            technologies
-                            company logo image">
-                        <img src="./images/heureka.png" alt="heureka verified
-                            company
-                            image">
+                        <div class="spoluprace_image">
+                            <img class="cLogo" src="./images/bronzelogo.png" alt="bronze partner
+                                company
+                                logo image">
+                        </div>
+                        <div class="spoluprace_image">
+                            <img class="cLogo" src="./images/microsoftlogo.png" alt="microsoft
+                                company
+                                logo image">
+                        </div>
+                        <div class="spoluprace_image">
+                            <img class="cLogo" src="./images/dell_techlogo.png" alt="dell
+                                technologies
+                                company logo image">
+                        </div>
+                        <div class="spoluprace_image">
+                            <img class="cLogo" src="./images/heureka.png" alt="heureka verified
+                                company
+                                image">
+                        </div>
                     </div>
                 </div>
             </div>
@@ -320,9 +343,9 @@
             <div class="footer_links_container">
                 <div class="opening footer_element">
                     <h3>Otevírací doba</h3>
-                    <p>Pondělí - Pátek<br>
+                    <p><b>Pondělí - Pátek</b><br>
                         9:00 - 12:00 14:00 - 17:00</p>
-                    <p>Sobota, Neděle, Svátky<br>
+                    <p><b>Sobota, Neděle, Svátky</b><br>
                         Zavřeno</p>
                 </div>
                 <div class="services footer_element">

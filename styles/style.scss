@@ -88,9 +88,11 @@ header {
         .contact_text {
             display: flex;
             text-align: start;
+
             .number {
                 color: #DE2F09;
             }
+
             a {
                 color: black;
             }
@@ -104,6 +106,10 @@ header {
 nav {
     a {
         color: white;
+    }
+
+    .nav_button {
+        display: none;
     }
 
     background-color: #0D0D0D;
@@ -548,6 +554,8 @@ footer {
         margin: 0;
         padding: 0;
         flex-flow: column;
+        overflow-x: hidden;
+
         .header_left {
             gap: 5px;
             padding: 5px;
@@ -562,10 +570,12 @@ footer {
             padding: 5px;
             margin: 0;
             justify-content: space-around;
+
             .contact {
                 img {
                     height: 38px;
                 }
+
                 a {
                     font-size: medium;
                 }
@@ -574,8 +584,68 @@ footer {
     }
 
     nav {
-        .nav_right{
-            padding: 0;
+        justify-content: center;
+        flex-flow: column;
+        .nav_button_container {
+            padding: 10px;
+            .nav_button {
+                transition: all 0.3s cubic-bezier(0.45, 0, 0.55, 1);
+                display: block;
+                border: 0;
+                background-color: #0D0D0D;
+
+                img {
+                    width: 30px;
+                }
+            }
+        }
+
+        .nav_button.focused {
+            transition: all 0.3s cubic-bezier(0.45, 0, 0.55, 1);
+            transform: rotate(90deg);
+        }
+
+        .nav_container {
+            transition: all 0.3s cubic-bezier(0.45, 0, 0.55, 1);
+            flex-flow: column;
+            justify-content: center;
+            align-items: center;
+            .nav_left {
+                gap: 10px;
+                .reseni {
+                    p {
+                        -webkit-line-clamp: 1;
+                        width: max-content;
+                    }
+                }
+            }
+            .nav_right {
+                gap: 10px;
+                padding: 5px 0 15px 0;
+                a.heart {
+                    padding: 0;
+                }
+            }
+        }
+
+        .nav_container.focused {
+            transition: all 0.3s cubic-bezier(0.45, 0, 0.55, 1);
+            display: flex;
+        }
+
+        .nav_container {
+            display: none;
+            flex-flow: column;
+
+            .nav_left {
+                display: flex;
+                flex-flow: column;
+            }
+
+            .nav_right {
+                display: flex;
+                flex-flow: column;
+            }
         }
     }
 
@@ -585,8 +655,47 @@ footer {
             grid-template-columns: 0;
             grid-template-rows: 0;
             flex-flow: column;
-            ul li {
-                white-space: normal;
+
+            ul {
+                li {
+                    padding: 0 !important;
+                    border-width: 0 !important;
+                    border-style: none !important;
+                }
+
+                flex-flow: column;
+                flex-wrap: wrap;
+            }
+
+            .main_section_grid_element {
+                padding: 50px;
+            }
+        }
+
+        .news {
+            img {
+                max-width: 300px;
+            }
+
+            justify-content: center;
+            align-items: center;
+            flex-flow: column;
+
+            .studies {
+                padding: 50px 50px 0 50px;
+            }
+
+            .actualities {
+                padding: 0 50px 50px 50px;
+
+                .actualities_container {
+                    flex-flow: column;
+
+                    .actuality {
+                        display: flex;
+                        flex-flow: column;
+                    }
+                }
             }
         }
 
@@ -594,6 +703,83 @@ footer {
             .section_content_image {
                 display: none;
             }
+        }
+
+        .why_choose {
+            .why_choose_container {
+                padding: 50px 0 50px 0;
+
+                .container {
+                    display: flex;
+                    flex-flow: column;
+                    align-items: center;
+                    justify-content: center;
+
+                    h2 {
+                        margin: 50px;
+                    }
+
+                    margin: 0;
+
+                    .why_choose_items {
+                        display: grid;
+                        grid-template-columns: repeat(2, 1fr);
+                        grid-template-rows: repeat(3, 1fr);
+                        grid-column-gap: 0px;
+                        grid-row-gap: 0px;
+                        margin: 0;
+
+                        .why_choose_item {
+                            text-align: center;
+                            justify-content: center;
+                            align-items: center;
+                        }
+                    }
+                }
+            }
+        }
+
+        .spoluprace {
+            h3 {
+                text-align: center;
+                font-size: 14px;
+            }
+
+            margin: 0;
+            padding: 50px 0 50px 0;
+            flex-flow: column;
+            gap: 100px;
+
+            .spoluprace_parent {
+                .spoluprace_container {
+                    display: flex;
+                    flex-flow: row;
+                    flex-wrap: wrap;
+                    justify-content: center;
+                    align-items: center;
+                    height: fit-content;
+
+                    .spoluprace_image {
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        padding: 10px;
+
+                        img {
+                            max-width: 150px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    footer {
+        padding-top: 50px;
+        padding-bottom: 50px;
+
+        .footer_links_container {
+            flex-flow: column;
         }
     }
 }
