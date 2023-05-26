@@ -19,6 +19,7 @@ html,
 body {
   margin: 0;
   padding: 0;
+  overflow-x: hidden;
 }
 html a,
 body a {
@@ -841,6 +842,10 @@ footer .footer_element a {
     padding: 0 !important;
     border-width: 0 !important;
     border-style: none !important;
+  }
+  section .main_section_grid .main_section_grid_element .section_content ul {
+    padding: 0;
+    background-color: transparent;
   }
   section .main_section_grid .main_section_grid_element {
     padding: 50px;
