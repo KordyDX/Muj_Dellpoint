@@ -384,6 +384,14 @@ section {
             margin: 0;
             padding: 0;
 
+            li {
+                a {
+                    display: flex;
+                    gap: 5px;
+                    color: white;
+                }
+            }
+
             .li1 {
                 padding-right: 20px;
                 border-width: 0 1px 0 0;
@@ -536,7 +544,7 @@ section {
 
             .button_box_container2 {
                 a {
-                    background-color: #3D81C0;
+                    background-color: #2B5B88;
                     color: white;
                 }
             }
@@ -741,6 +749,11 @@ footer {
                 ul {
                     padding: 5px;
                     background-color: rgba(0, 0, 0, 0.39);
+
+                    li {
+                        display: flex;
+                        align-items: center;
+                    }
                 }
             }
         }
@@ -783,11 +796,10 @@ footer {
         display: flex;
         flex-flow: column;
 
-        a {
-            padding: 0;
-        }
-
         li {
+            img {
+                width: 25px;
+            }
 
             .li1,
             .li2 {
@@ -891,6 +903,8 @@ footer {
         }
 
         .nav_container {
+            transition: 0.3s cubic-bezier(0.45, 0, 0.55, 1);
+            z-index: 999;
             display: flex;
             position: absolute;
             background-color: #0D0D0D;
@@ -929,7 +943,6 @@ footer {
                 }
             }
 
-            transition: 0.3s cubic-bezier(0.45, 0, 0.55, 1);
         }
 
         .nav_container.focused {
@@ -1029,6 +1042,8 @@ footer {
             flex-flow: column;
 
             ul {
+                gap: 6px;
+
                 li {
                     padding: 0 !important;
                     border-width: 0 !important;
